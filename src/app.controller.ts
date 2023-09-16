@@ -10,4 +10,10 @@ export class AppController {
 	root() {
 		return { message: 'Hello world!' };
 	}
+
+	@Get('lab')
+	@Render('lab1')
+	lab() {
+		return { message: 'Лабораторная работа 1!' };
+	}
 }
