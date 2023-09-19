@@ -24,3 +24,8 @@ html, body {
 .author {
 	text-align: center;
 }
+
+.footer {
+	background-color: #838383;
+	height: 50px;
+}
