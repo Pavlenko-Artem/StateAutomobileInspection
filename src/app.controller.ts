@@ -11,10 +11,28 @@ export class AppController {
 		return { message: 'Hello world!' };
 	}
 
-	@Get('lab')
+	@Get('lab1')
 	@Render('lab1')
-	lab() {
+	lab1() {
 		return { message: 'Лабораторная работа 1!' };
+	}
+
+	@Get('lab2')
+	@Render('lab2')
+	lab2() {
+		return { message: 'Лабораторная работа 2!' };
+	}
+
+	@Get('lab3')
+	@Render('lab3')
+	lab3() {
+		return { message: 'Лабораторная работа 3!' };
+	}
+
+	@Get('lab4')
+	@Render('lab4')
+	lab4() {
+		return { message: 'Лабораторная работа 4!' };
 	}
 
 	@Get('info')
