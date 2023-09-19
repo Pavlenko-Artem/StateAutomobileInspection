@@ -2,9 +2,13 @@
 <html lang="en">
 {{> head}}
 <body>
-	{{> navbar}}
-	{{message}}
-	{{> footer}}
+	<div class="wrapper">
+		{{> navbar}}
+		<main class="main">
+			{{message}}
+		</main>
+		{{> footer}}
+	</div>
 
 	{{> bootstrap.script}}
 </body>
