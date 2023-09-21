@@ -3,5 +3,5 @@ import { DriverService } from './driver.service';
 
 @Controller('driver')
 export class DriverController {
-  constructor(private readonly driverService: DriverService) {}
+	constructor(private readonly driverService: DriverService) {}
 }
