@@ -1,8 +1,8 @@
 import { IsNumber, IsString } from 'class-validator';
 
 export class DriverDto {
-	@IsNumber()
-	id: string;
+	@IsString()
+	driverLicense: string;
 
 	@IsString()
 	surname: string;
@@ -16,6 +16,6 @@ export class DriverDto {
 	@IsString()
 	address: string;
 
-	@IsString()
+	@IsNumber()
 	phone: string;
 }
