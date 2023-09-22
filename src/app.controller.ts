@@ -7,7 +7,7 @@ export class AppController {
 
 	@Get()
 	@Render('index')
-	root() {
+	index() {
 		return { message: 'Hello world!' };
 	}
 
@@ -38,24 +38,6 @@ export class AppController {
 	@Get('info')
 	@Render('info')
 	info() {
-		return {
-			info: 'Инструментальные средства информационных систем',
-			author:
-				'Лабораторные работы выполнил студент группы ВИАС41 Павленко Артём Сергеевич'
-		};
-	}
-
-	@Post('lab1')
-	@Render('lab1')
-	addDriver() {
-		function handleFormSubmit(event: { preventDefault: () => void }) {
-			// Просим форму не отправлять данные самостоятельно
-			event.preventDefault();
-			console.log('Отправка!');
-		}
-
-		const applicantForm = document.getElementById('mars-once');
-		applicantForm.addEventListener('submit', handleFormSubmit);
 		return {
 			info: 'Инструментальные средства информационных систем',
 			author:

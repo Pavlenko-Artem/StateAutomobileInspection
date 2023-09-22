@@ -1,82 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-{{> head}}
-
-<body>
-	<div class="wrapper">
-	{{> navbar}}
-	<main class="main">
-		<div class="container">
-			{{message}}
-			<form action="/lab1" method="post" class="mb-3 mt-3" id="add-driver">
-				<div class="mb-3">
-					<input type="text"
-						class="form-control"
-						id="driverLicense"
-						name="driverLicense"
-						placeholder="Номер водительского удостоверения"
-						minlength="2"
-						maxlength="30"
-						required>
-				</div>
-				<div class="mb-3">
-					<input type="text"
-						class="form-control"
-						id="surname"
-						name="surname"
-						placeholder="Фамилия"
-						minlength="2"
-						maxlength="30"
-						required>
-				</div>
-				<div class="mb-3">
-					<input type="text"
-						class="form-control"
-						id="name"
-						name="name"
-						placeholder="Имя"
-						minlength="2"
-						maxlength="30"
-						required>
-				</div>
-				<div class="mb-3">
-					<input type="text"
-						class="form-control"
-						id="patronymic"
-						name="patronymic"
-						placeholder="Отчество"
-						minlength="2"
-						maxlength="30"
-						required>
-				</div>
-				<div class="mb-3">
-					<input type="text"
-						class="form-control"
-						id="address"
-						name="address"
-						placeholder="Адрес"
-						minlength="2"
-						maxlength="250"
-						required>
-				</div>
-				<div class="mb-3">
-					<input type="number"
-						class="form-control"
-						id="phone"
-						name="phone"
-						placeholder="Телефон"
-						required>
-				</div>
-				<button type="submit" class="btn btn-primary">Добавить</button>
-			</form>
-		</div>
-	</main>
-	{{> footer}}
-	</div>
-	
-
-	{{> bootstrap.script}}
-	{{!-- <script src="script.js"></script> --}}
-</body>
-
-</html>
+{{#> app}}
+	{{#*inline "content"}}
+		<h1>Лабораторная работа 1!</h1>
+		<form action="/lab1" method="post" class="mb-3 mt-3" id="add-driver">
+			<div class="mb-3">
+				<input type="text" class="form-control" id="driverLicense" name="driverLicense"
+					placeholder="Номер водительского удостоверения" minlength="2" maxlength="30" required>
+			</div>
+			<div class="mb-3">
+				<input type="text" class="form-control" id="surname" name="surname" placeholder="Фамилия" minlength="2"
+					maxlength="30" required>
+			</div>
+			<div class="mb-3">
+				<input type="text" class="form-control" id="name" name="name" placeholder="Имя" minlength="2" maxlength="30"
+					required>
+			</div>
+			<div class="mb-3">
+				<input type="text" class="form-control" id="patronymic" name="patronymic" placeholder="Отчество" minlength="2"
+					maxlength="30" required>
+			</div>
+			<div class="mb-3">
+				<input type="text" class="form-control" id="address" name="address" placeholder="Адрес" minlength="2"
+					maxlength="250" required>
+			</div>
+			<div class="mb-3">
+				<input type="number" class="form-control" id="phone" name="phone" placeholder="Телефон" required>
+			</div>
+			<button type="submit" class="btn btn-primary">Добавить</button>
+		</form>
+	{{/inline}}
+{{/app}}

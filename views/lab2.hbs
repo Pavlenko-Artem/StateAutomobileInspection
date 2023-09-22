@@ -1,20 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-{{> head}}
-
-<body>
-	<div class="wrapper">
-	{{> navbar}}
-	<main class="main">
-		<div class="container">
-			{{message}}
-		</div>
-	</main>
-	{{> footer}}
-	</div>
-	
-
-	{{> bootstrap.script}}
-</body>
-
-</html>
+{{#> app}}
+	{{#*inline "content"}}
+		{{message}}
+	{{/inline}}
+{{/app}}
