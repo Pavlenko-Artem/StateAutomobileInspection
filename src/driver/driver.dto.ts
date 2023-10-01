@@ -17,5 +17,5 @@ export class DriverDto {
 	address: string;
 
 	@IsNumber()
-	phone: string;
+	phone: number;
 }
